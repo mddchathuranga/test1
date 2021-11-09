@@ -2,21 +2,21 @@ package com.dasun.firstdev;
 
 import java.util.Scanner;
 
-public class GetValues {
+public class getValues {
 
     public String brand;
     public String type;
     public String processor;
     public String ram;
     public boolean isBrandNew;
-    public int RamTypeDDR;
-    public String ScreenSize;
-    public int BatteryCells;
-    public String MonitorSize;
-    public String TowerType;
+    public int ramTypeDDR;
+    public String screenSize;
+    public int batteryCells;
+    public String monitorSize;
+    public String towerType;
 
 
-    public boolean GetValuesFromKeyboard() {
+    public boolean getValuesFromKeyboard() {
 
         Scanner input = new Scanner(System.in);
 
@@ -36,16 +36,16 @@ public class GetValues {
         this.isBrandNew = input.nextBoolean();
 
         System.out.println("Please Enter RAM Type DDR?");
-        this.RamTypeDDR = input.nextInt();
+        this.ramTypeDDR = input.nextInt();
 
         if (type.equals("laptop")) {
 
             System.out.println("This is Laptop Please fill Follow Details");
 
             System.out.println("Please Enter Laptop Screen Size");
-            this.ScreenSize = input.next();
+            this.screenSize = input.next();
             System.out.println("Please Enter Laptop Battery Cells Amount");
-            this.BatteryCells = input.nextInt();
+            this.batteryCells = input.nextInt();
             return true;
 
         }
@@ -55,9 +55,9 @@ public class GetValues {
             System.out.println("This is Desktop Please fill Follow Details");
 
             System.out.println("Please Enter Desktop Monitor Size");
-            this.MonitorSize = input.next();
+            this.monitorSize = input.next();
             System.out.println("Please Enter Tower Type");
-            this.TowerType = input.next();
+            this.towerType = input.next();
             return true;
 
         }

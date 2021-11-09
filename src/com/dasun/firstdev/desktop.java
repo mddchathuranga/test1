@@ -1,10 +1,10 @@
 package com.dasun.firstdev;
 
-public class Desktop extends Computer {
+public class desktop extends computer {
     private String MonitorSize;
     private String TowerType;
 
-    public Desktop(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR, String monitorSize, String towerType) {
+    public desktop(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR, String monitorSize, String towerType) {
         super(brand, type, processor, ram, isBrandnew, ramTypeDDR);
         MonitorSize = monitorSize;
         TowerType = towerType;
@@ -26,7 +26,7 @@ public class Desktop extends Computer {
         TowerType = towerType;
     }
 
-    public void ShowDetails(){
+    public void showDetails(){
 
         System.out.println("This Is Desktop Class");
 

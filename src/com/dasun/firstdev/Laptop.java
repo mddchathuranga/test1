@@ -1,10 +1,6 @@
 package com.dasun.firstdev;
 
-import javafx.stage.Screen;
-
-import java.security.PublicKey;
-
-public class Laptop extends Computer {
+public class Laptop extends computer {
 
     private String ScreenSize;
     private int BatteryCells;
@@ -31,7 +27,7 @@ public class Laptop extends Computer {
         BatteryCells = batteryCells;
     }
 
-    public void ShowDetails(){
+    public void showDetails(){
 
         System.out.println("This Is Laptop Class");
 

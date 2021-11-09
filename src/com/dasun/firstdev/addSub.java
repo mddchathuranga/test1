@@ -1,6 +1,6 @@
 package com.dasun.firstdev;
 
-public class addSub implements Calculation {
+public class addSub implements calculation {
 
     public int add(int a, int b){
 

@@ -1,6 +1,6 @@
 package com.dasun.firstdev;
 
-abstract class Computer {
+abstract class computer {
 
     private String brand;
     private String type;
@@ -9,9 +9,9 @@ abstract class Computer {
     private boolean IsBrandnew;
     private int RamTypeDDR;
 
-    abstract void ShowDetails(); // abstract method
+    abstract void showDetails(); // abstract method
 
-    public Computer(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR) {
+    public computer(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR) {
         this.brand = brand;
         this.type = type;
         this.processor = processor;
