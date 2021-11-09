@@ -27,7 +27,7 @@ public class Main {
         }
 
 
-        System.out.println("Addition = "+ adsub.add(4,5));
+        System.out.println("Addition = "+ adsub.add(11,5));
         System.out.println("Substaction ="+ adsub.sub(10,3));
 
 
