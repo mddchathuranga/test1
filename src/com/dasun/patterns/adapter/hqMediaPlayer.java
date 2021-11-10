@@ -9,7 +9,7 @@ public class hqMediaPlayer implements proMediaPlayer {
     @Override
     public void playIn4k(String fileName) {
 
-        System.out.println("Playing"+fileName+" on HQ Media Player");
+        System.out.println("Playing" + fileName + " on HQ Media Player");
 
     }
 }

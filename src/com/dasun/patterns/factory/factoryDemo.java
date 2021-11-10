@@ -3,9 +3,8 @@ package com.dasun.patterns.factory;
 public class factoryDemo {
 
     public static void main(String[] args) {
-        // git
 
-        computerFactory computerFactory=new computerFactory();
+        computerFactory computerFactory = new computerFactory();
 
         computer computer1 = computerFactory.getComputer("laptop");
         computer1.showDetails();

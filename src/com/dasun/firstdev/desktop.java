@@ -14,19 +14,19 @@ public class desktop extends computer {
         return MonitorSize;
     }
 
-    public String getTowerType() {
-        return TowerType;
-    }
-
     public void setMonitorSize(String monitorSize) {
         MonitorSize = monitorSize;
+    }
+
+    public String getTowerType() {
+        return TowerType;
     }
 
     public void setTowerType(String towerType) {
         TowerType = towerType;
     }
 
-    public void showDetails(){
+    public void showDetails() {
 
         System.out.println("This Is Desktop Class");
 

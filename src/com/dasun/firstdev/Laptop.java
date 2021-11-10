@@ -15,19 +15,19 @@ public class Laptop extends computer {
         return ScreenSize;
     }
 
-    public int getBatteryCells() {
-        return BatteryCells;
-    }
-
     public void setScreenSize(String screenSize) {
         ScreenSize = screenSize;
+    }
+
+    public int getBatteryCells() {
+        return BatteryCells;
     }
 
     public void setBatteryCells(int batteryCells) {
         BatteryCells = batteryCells;
     }
 
-    public void showDetails(){
+    public void showDetails() {
 
         System.out.println("This Is Laptop Class");
 

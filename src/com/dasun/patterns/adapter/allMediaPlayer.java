@@ -5,7 +5,7 @@ public class allMediaPlayer implements proMediaPlayer {
     @Override
     public void playAll(String fileName) {
 
-   System.out.println("Playing"+fileName+" on All Media Player");
+        System.out.println("Playing" + fileName + " on All Media Player");
     }
 
 
