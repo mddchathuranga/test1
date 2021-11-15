@@ -1,5 +1,5 @@
 package com.dasun.patterns.factory;
 
-public interface computer {
+public interface Computer {
     void showDetails();
 }

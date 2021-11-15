@@ -1,14 +1,14 @@
 package com.dasun.patterns.adapter;
 
-public class playerPlugin implements freeMediaPlayer {
+public class PlayerPlugin implements FreeMediaPlayer {
 
-    proMediaPlayer proMediaPlayer;
+    ProMediaPlayer proMediaPlayer;
 
-    public playerPlugin(String fileType) {
+    public PlayerPlugin(String fileType) {
         if (fileType.equalsIgnoreCase("MP4")) {
-            proMediaPlayer = new allMediaPlayer();
+            proMediaPlayer = new AllMediaPlayer();
         } else if (fileType.equalsIgnoreCase("4K")) {
-            proMediaPlayer = new hqMediaPlayer();
+            proMediaPlayer = new HqMediaPlayer();
         }
     }
 

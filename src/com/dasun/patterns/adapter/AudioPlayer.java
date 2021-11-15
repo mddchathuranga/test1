@@ -1,7 +1,7 @@
 package com.dasun.patterns.adapter;
 
-public class audioPlayer implements freeMediaPlayer {
-    playerPlugin playerPlugin;
+public class AudioPlayer implements FreeMediaPlayer {
+    PlayerPlugin playerPlugin;
 
     @Override
     public void play(String fileName, String fileType) {
@@ -11,7 +11,7 @@ public class audioPlayer implements freeMediaPlayer {
             System.out.println("Playing" + fileName + " on Audio Player");
 
         } else if ((fileType.equalsIgnoreCase("MP4")) || (fileType.equalsIgnoreCase("4K"))) {
-            playerPlugin = new playerPlugin(fileType);
+            playerPlugin = new PlayerPlugin(fileType);
             playerPlugin.play(fileName, fileType);
         } else {
             System.out.println("invalid file type!");

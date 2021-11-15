@@ -1,6 +1,6 @@
 package com.dasun.patterns.adapter;
 
-public class allMediaPlayer implements proMediaPlayer {
+public class AllMediaPlayer implements ProMediaPlayer {
 
     @Override
     public void playAll(String fileName) {

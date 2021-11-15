@@ -2,14 +2,14 @@ package com.dasun.firstdev;
 
 import java.util.Scanner;
 
-public class getValues {
+public class GetValues {
 
     public String brand;
     public String type;
     public String processor;
     public String ram;
-    public boolean isBrandNew;
-    public int ramTypeDDR;
+    public boolean isBrandnew;
+    public int ramType;
     public String screenSize;
     public int batteryCells;
     public String monitorSize;
@@ -33,10 +33,10 @@ public class getValues {
         this.ram = input.next();
 
         System.out.println("Please Enter TRUE for Brand New FALSE for not");
-        this.isBrandNew = input.nextBoolean();
+        this.isBrandnew = input.nextBoolean();
 
         System.out.println("Please Enter RAM Type DDR?");
-        this.ramTypeDDR = input.nextInt();
+        this.ramType = input.nextInt();
 
         if (type.equals("laptop")) {
 
@@ -62,7 +62,7 @@ public class getValues {
 
         }
 
-        return true;
+        return false;
 
 
     }

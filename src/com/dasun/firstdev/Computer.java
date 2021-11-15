@@ -1,21 +1,21 @@
 package com.dasun.firstdev;
 
-abstract class computer {
+abstract class Computer {
 
     private String brand;
     private String type;
     private String processor;
     private String ram;
-    private boolean IsBrandnew;
-    private int RamTypeDDR;
+    private boolean isBrandnew;
+    private int ramType;
 
-    public computer(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR) {
+    protected Computer(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR) {
         this.brand = brand;
         this.type = type;
         this.processor = processor;
         this.ram = ram;
-        IsBrandnew = isBrandnew;
-        RamTypeDDR = ramTypeDDR;
+        this.isBrandnew = isBrandnew;
+        this.ramType = ramTypeDDR;
     }
 
     abstract void showDetails(); // abstract method
@@ -53,19 +53,19 @@ abstract class computer {
     }
 
     public boolean isBrandnew() {
-        return IsBrandnew;
+        return isBrandnew;
     }
 
     public void setBrandnew(boolean brandnew) {
-        IsBrandnew = brandnew;
+        isBrandnew = brandnew;
     }
 
-    public int getRamTypeDDR() {
-        return RamTypeDDR;
+    public int getRamType() {
+        return ramType;
     }
 
-    public void setRamTypeDDR(int ramTypeDDR) {
-        RamTypeDDR = ramTypeDDR;
+    public void setRamType(int ramType) {
+        this.ramType = ramType;
     }
 
 

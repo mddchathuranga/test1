@@ -1,30 +1,30 @@
 package com.dasun.firstdev;
 
-public class Laptop extends computer {
+public class Laptop extends Computer {
 
-    private String ScreenSize;
-    private int BatteryCells;
+    private String screenSize;
+    private int batteryCells;
 
     public Laptop(String brand, String type, String processor, String ram, boolean isBrandnew, int ramTypeDDR, String screenSize, int batteryCells) {
         super(brand, type, processor, ram, isBrandnew, ramTypeDDR);
-        ScreenSize = screenSize;
-        BatteryCells = batteryCells;
+        this.screenSize = screenSize;
+        this.batteryCells = batteryCells;
     }
 
     public String getScreenSize() {
-        return ScreenSize;
+        return screenSize;
     }
 
     public void setScreenSize(String screenSize) {
-        ScreenSize = screenSize;
+        this.screenSize = screenSize;
     }
 
     public int getBatteryCells() {
-        return BatteryCells;
+        return batteryCells;
     }
 
     public void setBatteryCells(int batteryCells) {
-        BatteryCells = batteryCells;
+        this.batteryCells = batteryCells;
     }
 
     public void showDetails() {
